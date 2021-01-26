@@ -5,7 +5,7 @@ head.appendChild(style), style.type = "text/css", style.styleSheet ? style.style
 var html = document.createElement("div");
 
 html.innerHTML = "\n<div id='alert-backdrop'><div id='alert-container'><div id='glassmorphism'></div><div id='icon-tick'></div><div id='icon-cross'></div><div id='icon-info'></div><h2 id='alert-h2'></h2><p id='alert-p'></p><input id='alert-input' type='text' autocomplete='off'><div id='btn-container'><button id='cancel-btn'></button><button id='ok-btn'></button></div></div></div>\n";
-	document.body.appendChild(html);
+	document.querySelector("body").appendChild(html);
 
 var alertBox = document.getElementById("alert-container");
 
