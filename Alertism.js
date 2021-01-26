@@ -13,6 +13,8 @@ var html = document.createElement("div");
         
         var alertInputValue = document.getElementById("alert-input").value.trim();
 
+        alertInputValue === "Assassin";
+
 function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "Ok", closeButton, inputEnable = false, mode, transition, icon){
         
         var alertBox = document.getElementById("alert-container");
