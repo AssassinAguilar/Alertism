@@ -11,7 +11,7 @@ var html = document.createElement("div");
         
         var alertCloseBtn = document.getElementById("cancel-btn");
         
-        var alertInputValue = document.getElementById("alert-input").value;
+        var alertInputValue = document.getElementById("alert-input").value.trim();
 
 function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "Ok", closeButton, inputEnable = false, mode, transition, icon){
         
