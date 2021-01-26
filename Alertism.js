@@ -134,7 +134,7 @@ var html = document.createElement("div");
      
      function Toast(text = "This is a Toast.", mode){
      
-     var css = "#toast{visibility:hidden;box-shadow:-2px -2px 6px rgba(255,255,255,0.01),2px 2px 6px rgba(0,0,0,0.8);background-color:#fff;color:#000;text-align:center;border-radius:0;padding:16px;position:fixed;z-index:999999999999999999999999999;left:50%;transform:translateX(-50%);bottom:30px;width:calc(100% - 20vw);font-size:1rem}#toast.dark{background:#000;color:#fff}#toast.active{visibility:visible;animation:fadein .5s,fadeout .5s 1.5s}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}";
+     var css = "\n@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');*{margin:0;padding:0;box-sizing:border-box;user-select:none;-webkit-tap-highlight-color:transparent;}#toast{visibility:hidden;box-shadow:-2px -2px 6px rgba(255,255,255,0.01),2px 2px 6px rgba(0,0,0,0.8);background-color:#fff;color:#000;text-align:center;border-radius:0;padding:16px;position:fixed;z-index:999999999999999999999999999;left:50%;transform:translateX(-50%);bottom:30px;width:calc(100% - 20vw);font-size:1rem}#toast.dark{background:#000;color:#fff}#toast.active{visibility:visible;animation:fadein .5s,fadeout .5s 1.5s}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}\n";
      head = document.head || document.getElementsByTagName("head")[0],
     style = document.createElement("style");
 head.appendChild(style), style.type = "text/css", style.styleSheet ? style.styleSheet.cssText = css : style.appendChild(document.createTextNode(css));
