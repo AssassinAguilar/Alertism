@@ -6,6 +6,12 @@ var html = document.createElement("div");
 
         html.innerHTML = "\n<div id='alert-backdrop'><div id='alert-container'><div id='glassmorphism'></div><div id='icon-tick'></div><div id='icon-cross'></div><div id='icon-info'></div><h2 id='alert-h2'></h2><p id='alert-p'></p><input id='alert-input' type='text' autocomplete='off' placeholder='Enter Text'><div id='btn-container'><button id='cancel-btn'></button><button id='ok-btn'></button></div></div></div>\n";
         document.body.appendChild(html);
+        
+        var alertOkBtn = document.getElementById("ok-btn");
+        
+        var alertCloseBtn = document.getElementById("cancel-btn");
+        
+        var alertInputValue = document.getElementById("alert-input").value;
 
 function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "Ok", closeButton, inputEnable = false, mode, transition, icon){
         
@@ -31,7 +37,7 @@ function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "O
         var input = document.getElementById("alert-input");
         
         var okBtn = document.getElementById("ok-btn");
-        okBtn.innerText = button;
+        alertOkBtn.innerText = button;
         
         if(inputEnable === true){
             
@@ -86,7 +92,7 @@ function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "O
             closeBtn.innerText = closeButton;
         }
         
-        okBtn.addEventListener("click", function(){
+        alertOkBtn.addEventListener("click", function(){
             if(transition === "zoom-in"){
             alertBox.style.transform = "scale(0)";
             setTimeout(function (){mainAlert.style.display = "none";},500)
@@ -108,7 +114,7 @@ function Alertism(heading = "Alert", text = "This is an Alert Box.", button = "O
         } 
         })
         
-        closeBtn.addEventListener("click", function(){
+        alertCloseBtn.addEventListener("click", function(){
             if(transition === "zoom-in"){
             alertBox.style.transform = "scale(0)";
             setTimeout(function (){mainAlert.style.display = "none";},500)
