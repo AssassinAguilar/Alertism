@@ -189,7 +189,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "scale(0)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "top")
@@ -197,7 +197,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateY(200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "bottom")
@@ -205,7 +205,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateY(-200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "left")
@@ -213,7 +213,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateX(200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "right")
@@ -221,13 +221,13 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateX(-200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else
 		{
 			alertBox.style.display = "none";
-			mainAlert.remove();
+			mainAlert.classList.add("alert-hide");
 		}
 	})
 
@@ -238,7 +238,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "scale(0)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "top")
@@ -246,7 +246,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateY(200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "bottom")
@@ -254,7 +254,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateY(-200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "left")
@@ -262,7 +262,7 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateX(200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else if (animation === "right")
@@ -270,13 +270,13 @@ function Alertism(arguments, animation)
 			alertBox.style.transform = "translateX(-200%)";
 			setTimeout(function ()
 			{
-				mainAlert.remove();
+				mainAlert.classList.add("alert-hide");
 			}, 500)
 		}
 		else
 		{
 			alertBox.style.display = "none";
-			mainAlert.remove();
+			mainAlert.classList.add("alert-hide");
 		}
 	})
 }
