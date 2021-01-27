@@ -47,30 +47,6 @@ var alertInput = document.getElementById("alert-input");
 function Alertism(arguments, animation)
 {
 
-	var alertBox = document.getElementById("alert-container");
-
-	var mainAlert = document.getElementById("alert-backdrop");
-
-	var alertOkBtn = document.getElementById("ok-btn");
-
-	var alertCloseBtn = document.getElementById("cancel-btn");
-
-	var alertInputValue = document.getElementById("alert-input").value;
-
-	var tickIcon = document.getElementById("icon-tick");
-
-	var crossIcon = document.getElementById("icon-cross");
-
-	var infoIcon = document.getElementById("icon-info");
-
-	var alertH2 = document.getElementById("alert-h2");
-
-	var alertInputPlace = document.getElementById("alert-input").placeholder;
-
-	var alertP = document.getElementById("alert-p");
-
-	var alertInput = document.getElementById("alert-input");
-
 	mainAlert.style.display = "flex";
 
 	if (arguments.alertBackground !== undefined)
