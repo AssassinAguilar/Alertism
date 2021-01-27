@@ -11,7 +11,7 @@ if (style.styleSheet){
 }
 var div = document.createElement("div");
 div.setAttribute("id", "alertSuperContainer");
-div.innerHTML = "\n<div id='alert-backdrop'><div id='alert-container'><div id='glassmorphism'></div><div id='icon-tick'></div><div id='icon-cross'></div><div id='icon-info'></div><h2 id='alert-h2'></h2><p id='alert-p'></p><input id='alert-input' type='text' autocomplete='off'><div id='btn-container'><button id='cancel-btn'></button><button id='ok-btn'></button></div></div></div>\n",
+div.innerHTML = "\n<div id='alert-backdrop'><div id='alert-container'><div id='glassmorphism'></div><div id='icon-tick'></div><div id='icon-cross'></div><div id='icon-info'></div><h2 id='alert-h2'></h2><p id='alert-p'></p><input id='alert-input' type='text' autocomplete='off'><div id='btn-container'><button id='cancel-btn'></button><button id='ok-btn'></button></div></div></div>\n";
 document.querySelector("body").appendChild(div);
 
 var alertBox = document.getElementById("alert-container");
