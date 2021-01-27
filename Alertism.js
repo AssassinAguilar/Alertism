@@ -184,100 +184,12 @@ function Alertism(arguments, animation)
 
 	alertCloseBtn.addEventListener("click", function ()
 	{
-		if (animation === "zoom")
-		{
-			alertBox.style.transform = "scale(0)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "top")
-		{
-			alertBox.style.transform = "translateY(200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "bottom")
-		{
-			alertBox.style.transform = "translateY(-200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "left")
-		{
-			alertBox.style.transform = "translateX(200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "right")
-		{
-			alertBox.style.transform = "translateX(-200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else
-		{
-			alertBox.style.display = "none";
-			mainAlert.classList.add("alert-hide");
-		}
+		alertCanceledByBtnS();
 	})
 
 	alertOkBtn.addEventListener("click", function ()
 	{
-		if (animation === "zoom")
-		{
-			alertBox.style.transform = "scale(0)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "top")
-		{
-			alertBox.style.transform = "translateY(200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "bottom")
-		{
-			alertBox.style.transform = "translateY(-200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "left")
-		{
-			alertBox.style.transform = "translateX(200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else if (animation === "right")
-		{
-			alertBox.style.transform = "translateX(-200%)";
-			setTimeout(function ()
-			{
-				mainAlert.classList.add("alert-hide");
-			}, 500)
-		}
-		else
-		{
-			alertBox.style.display = "none";
-			mainAlert.classList.add("alert-hide");
-		}
+		alertCanceledByBtnS();
 	})
 }
 
@@ -315,4 +227,53 @@ function Toast(text = "This is a Toast.", Tbackground, Tcolor)
 	{
 		toast.className = toast.classList.remove("active");
 	}, 2000);
+}
+
+function alertCanceledByBtnS()
+{
+    if (animation === "zoom")
+		{
+			alertBox.style.transform = "scale(0)";
+			setTimeout(function ()
+			{
+				mainAlert.classList.add("alert-hide");
+			}, 500)
+		}
+		else if (animation === "top")
+		{
+			alertBox.style.transform = "translateY(200%)";
+			setTimeout(function ()
+			{
+				mainAlert.classList.add("alert-hide");
+			}, 500)
+		}
+		else if (animation === "bottom")
+		{
+			alertBox.style.transform = "translateY(-200%)";
+			setTimeout(function ()
+			{
+				mainAlert.classList.add("alert-hide");
+			}, 500)
+		}
+		else if (animation === "left")
+		{
+			alertBox.style.transform = "translateX(200%)";
+			setTimeout(function ()
+			{
+				mainAlert.classList.add("alert-hide");
+			}, 500)
+		}
+		else if (animation === "right")
+		{
+			alertBox.style.transform = "translateX(-200%)";
+			setTimeout(function ()
+			{
+				mainAlert.classList.add("alert-hide");
+			}, 500)
+		}
+		else
+		{
+			alertBox.style.display = "none";
+			mainAlert.classList.add("alert-hide");
+		}
 }
