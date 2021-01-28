@@ -51,11 +51,11 @@ function Alertism(arguments, animation)
 
 	if (arguments.alertBackground !== undefined)
 	{
-		alertBox.style.background = arguments.alertBackground;
+		alertBox.style.backgroundColor = arguments.alertBackground;
 	}
 	else
 	{
-		alertBox.style.background = "#fff";
+		alertBox.style.backgroundColor = "#fff";
 	}
 
 	if (arguments.alertTextColour !== undefined)
