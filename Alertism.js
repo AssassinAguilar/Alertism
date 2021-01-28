@@ -179,7 +179,7 @@ function Alertism(arguments, animation)
 	{
 		infoIcon.style.display = "block";
 		tickIcon.style.display = "none";
-		infoIcon.style.display = "none";
+		crossIcon.style.display = "none";
 	}
 	else
 	{
