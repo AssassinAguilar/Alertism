@@ -46,8 +46,14 @@ var alertP = document.getElementById("alert-p");
 
 var alertInput = document.getElementById("alert-input");
 
+var main = document.querySelector("html");
+
 function Alertism(arguments, animation)
 {
+
+        document.body.style.overflow = "hidden";
+
+        main.style.overflow = "hidden";
 
 	mainAlert.style.display = "flex";
 
@@ -202,7 +208,7 @@ function Alertism(arguments, animation)
 	{
 		if (animation === "zoom")
 		{
-			alertBox.style.transform = "scale(0.1)";
+			alertBox.style.transform = "scale(0.00001)";
 			setTimeout(function ()
 			{
 				mainAlert.style.display = "none";
@@ -247,13 +253,17 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
+
+                document.body.style.overflow = "hidden";
+
+                main.style.overflow = "hidden";
 	})
 
 	alertOkBtn.addEventListener("click", function ()
 	{
 		if (animation === "zoom")
 		{
-			alertBox.style.transform = "scale(0.1)";
+			alertBox.style.transform = "scale(0.00001)";
 			setTimeout(function ()
 			{
 				mainAlert.style.display = "none";
@@ -298,6 +308,10 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
+
+                document.body.style.overflow = "hidden";
+
+                main.style.overflow = "hidden";
 	})
 }
 
