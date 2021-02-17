@@ -206,7 +206,7 @@ function Alertism(arguments, animation)
 
 	alertCloseBtn.addEventListener("click", function ()
 	{
-		if (animation === "zoom")
+		if (animation == "zoom")
 		{
 			alertBox.style.transform = "scale(0.00001)";
 			setTimeout(function ()
@@ -214,7 +214,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "top")
+		else if (animation == "top")
 		{
 			alertBox.style.transform = "translateY(200%)";
 			setTimeout(function ()
@@ -222,7 +222,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "bottom")
+		else if (animation == "bottom")
 		{
 			alertBox.style.transform = "translateY(-200%)";
 			setTimeout(function ()
@@ -230,7 +230,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "left")
+		else if (animation == "left")
 		{
 			alertBox.style.transform = "translateX(200%)";
 			setTimeout(function ()
@@ -238,7 +238,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "right")
+		else if (animation == "right")
 		{
 			alertBox.style.transform = "translateX(-200%)";
 			setTimeout(function ()
@@ -254,14 +254,14 @@ function Alertism(arguments, animation)
 			}, 500)
 		}
 
-                document.body.style.overflow = "hidden";
+                document.body.style.overflow = "visible";
 
-                main.style.overflow = "hidden";
+                main.style.overflow = "visible";
 	})
 
 	alertOkBtn.addEventListener("click", function ()
 	{
-		if (animation === "zoom")
+		if (animation == "zoom")
 		{
 			alertBox.style.transform = "scale(0.00001)";
 			setTimeout(function ()
@@ -269,7 +269,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "top")
+		else if (animation == "top")
 		{
 			alertBox.style.transform = "translateY(200%)";
 			setTimeout(function ()
@@ -277,7 +277,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "bottom")
+		else if (animation == "bottom")
 		{
 			alertBox.style.transform = "translateY(-200%)";
 			setTimeout(function ()
@@ -285,7 +285,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "left")
+		else if (animation == "left")
 		{
 			alertBox.style.transform = "translateX(200%)";
 			setTimeout(function ()
@@ -293,7 +293,7 @@ function Alertism(arguments, animation)
 				mainAlert.style.display = "none";
 			}, 500)
 		}
-		else if (animation === "right")
+		else if (animation == "right")
 		{
 			alertBox.style.transform = "translateX(-200%)";
 			setTimeout(function ()
@@ -309,9 +309,9 @@ function Alertism(arguments, animation)
 			}, 500)
 		}
 
-                document.body.style.overflow = "hidden";
+                document.body.style.overflow = "visible";
 
-                main.style.overflow = "hidden";
+                main.style.overflow = "visible";
 	})
 }
 
