@@ -5,3 +5,4 @@ Let's talk about the easy implementation of Alertism.js V2.0.0 to your webpage. 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V2.0.0/main.js"></script>
 ```
+# What's New ?
