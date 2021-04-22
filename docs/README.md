@@ -433,6 +433,7 @@ Alertism({
 ```
 # Toast
 Alertism.js V2.0.0 also makes Toasts means Pop-Ups, Let's have a look on it's table to understand it properly. The main object in this is **Toast** which contains all the arguments in the form of an array
+### Arguments Table
 <table>
             <thead>
                 <tr>
