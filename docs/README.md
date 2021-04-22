@@ -580,6 +580,7 @@ All the valid positions, themes, animations and icon array are same as Alerts. J
         </ul>
 
 **_Note:- The timer for the Toasts are setted to 500 milliseconds more for the perfect animation of the time bar, If you aslo want perfect timing of the toasts going then enter the timer value to 500 milliseconds less than you want_**
+
 A mixed example of most of the arguments of the Toast
 
 ```javascript
