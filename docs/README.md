@@ -353,7 +353,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
                 </li>
             </ul>
 4. The icon Array arguments are as follows
-```javascript
+```
 {
     position: "center"
     type: "tick",
