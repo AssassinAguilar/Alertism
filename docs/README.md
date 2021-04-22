@@ -353,7 +353,8 @@ The main object is **Alertism** which contains all arguments in a form of array.
                 </li>
             </ul>
 4. The icon Array arguments are as follows
-```
+
+```javascript
 {
     position: "center"
     type: "tick",
@@ -369,6 +370,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
            </li>
        </ul>
 5. The input arguments are as follows
+
 ```javascript
 {
     type: "textarea",
@@ -377,6 +379,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
 }
 ```
 A mixed example of most of the arguments of the Alertism
+
 ```javascript
 Alertism({
     alertHeading: "Hello",
