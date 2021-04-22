@@ -287,7 +287,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
             </tbody>
         </table>
 1. All valid Positons are like top-left, center and bottom-right. Here's the list for them
-            <ul class="text-bold font-2">
+            <ul>
                 <li>
                     top-left
                 </li>
@@ -317,7 +317,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
                 </li>
             </ul>
 2. All valid Animations are same as old, they just get a little bit more good and awesome. Here's the list
-            <ul class="text-bold font-2">
+            <ul>
                 <li>
                     top
                 </li>
@@ -335,7 +335,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
                 </li>
             </ul>
 3. All valis themes are as follows
-            <ul class="text-bold font-2">
+            <ul>
                 <li>
                     light
                 </li>
@@ -357,10 +357,10 @@ The main object is **Alertism** which contains all arguments in a form of array.
 {
     position: "center"
     type: "tick",
-    color: "#2196f3",
+    color: "#2196f3"
 }
 ```
-       <ul class="text-bold">
+       <ul>
            <li>
                 All valid positions are left, center, right.
            </li>
