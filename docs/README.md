@@ -429,4 +429,4 @@ Alertism({
     animation: "zoom-in"
 })
 ```
-#Toast
+# Toast
