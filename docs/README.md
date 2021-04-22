@@ -13,7 +13,9 @@ Alertism({
 })
 ```
 That was the basic calling of the Alertism.js V2.0.0 Alerts.
+
 **_WARNING:- 2 Alerts can't be used at same event listeners, So if you want to use 2 Alerts at same time. You have to use the other one in the onConfirmed like argumetns of the first one._**
+
 The main object is **Alertism** which contains all arguments in a form of array. Check out the following table and try to understand it carefully as you are only become able to use Alertism.js V2.0.0 after understanding the following table.
 ### Arguments Table
 <table>
@@ -579,7 +581,7 @@ All the valid positions, themes, animations and icon array are same as Alerts. J
             </li>
         </ul>
 
-**_Note:- The timer for the Toasts are setted to 500 milliseconds more for the perfect animation of the time bar, If you aslo want perfect timing of the toasts going then enter the timer value to 500 milliseconds less than you want_**
+**_Note:- The timer for the Toasts are setted to 500 milliseconds more for the perfect animation of the time bar, If you aslo want perfect timing of the toasts going then enter the timer value to 500 milliseconds less than you want._**
 
 A mixed example of most of the arguments of the Toast
 
