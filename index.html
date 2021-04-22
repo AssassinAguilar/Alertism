@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertism.js V2.0.0</title>
+    <link href="https://cdn.jsdelivr.net/gh/atoms19/ILUS.CSS/dist/ILUS5.min.css" rel="stylesheet">
+    <style>
+*
+{
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar,
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+.shiki
+{
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.nav
+{
+    padding: 0 10px;
+}
+
+.nav .hide-till-md
+{
+    margin: 0;
+}
+
+.nav .hide-till-md li
+{
+    padding: 10px;
+}
+
+.sidenav
+{
+    width: 70%;
+    transform: translateX(-110%);
+    transition: 0.5s;
+}
+
+.sidenav.active
+{
+    transform: translateX(0);
+}
+
+.first
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table
+{
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.ball
+{
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 10px;
+    transform: translateY(-500%);
+    animation: scroll 1s linear infinite;
+}
+
+@keyframes scroll
+{
+    0%
+    {
+        transform: translateY(-500%);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: translateY(-1000%);
+        opacity: 0;
+    }
+}
+    </style>
+</head>
+<body class="font-2">
+    <section class="width-full height-full red first">
+        <h1 class="margin-0 pack-0 text-bright text-center font-jumbo text-bold">Alertism.js V2.0.0</h1>
+        <div class="ball bright circle"></div>
+    </section>
+    <nav class="nav red pack-0">
+        <h2 class="nav-logo">
+            Alertism.js V2.0.0
+        </h2>
+        <div class="nav-menu hide-from-md" id="hamBurger" style="cursor: pointer;" onclick="openMenu()">
+            <span class="burger-menu"></span>
+        </div>
+        <ul class="hide-till-md font-4 text-bold">
+            <li style="cursor: pointer;" onclick="new finder('#intro').scrollTo()">
+                Introduction
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#new').scrollTo()">
+                What's New ?
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#use').scrollTo()">
+                Usage
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#toast').scrollTo()">
+                Toast
+            </li>
+            <li style="cursor: pointer;">
+                <a href="https://github.com/AssassinAguilar" target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="sidenav hide-from-md red font-4" id="sideNav">
+        <ul>
+            <li style="cursor: pointer;" onclick="new finder('#intro').scrollTo()">
+                Introduction
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#new').scrollTo()">
+                What's New ?
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#use').scrollTo()">
+                Usage
+            </li>
+            <li style="cursor: pointer;" onclick="new finder('#toast').scrollTo()">
+                Toast
+            </li>
+            <li style="cursor: pointer;">
+                <a href="https://github.com/AssassinAguilar" target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="wrap pack" id="intro">
+        <h1 class="font-4">
+            Introduction
+        </h1>
+        <hr>
+        <p class="text-bold">
+            Alertism.js is a JavaScript Library which is used to make the default Alerts of JavaScript more beautiful and good-looking than original with some few lines of code. This is the V2.0.0 of Alertism.js by Assassin. Alertism.js is also used to make some nice Toasts means Pop-Ups.
+        </p>
+        <h3 class="font-4">
+            Implementation
+        </h3>
+        <hr>
+        <p class="text-bold">
+            Let's talk about the easy implementation of Alertism.js V2.0.0 to your webpage. You just have to copy/paste the following CDN of Alertism.js v2.0.0 to your webpage. This CDN will import the Alertism.js V2.0.0 Library from it's repository on Assassin's GitHub profile to your webpage.
+        </p>
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="html" id="cdn">&lt;script src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V2.0.0/main.js"&gt;&lt;/script&gt;</div>
+        <div class="text-center">
+            <button class="btn blue text-medium shadow" onclick="Toast({
+                text: 'Library copied Successfully !',
+                enableIcon: true
+            });copy('#cdn')">Copy Library !</button>
+        </div>
+    </section>
+    <section  class="wrap pack" id="new">
+        <h1 class="font-4">
+            What's New ?
+        </h1>
+        <hr>
+        <p class="text-bold">
+            Fixed almost all major bugs. There's such a lot of new stuff in Alertism.js V2.0.0 :-
+        </p>
+        <h3 class="font-4">
+            +2 New Themes
+        </h3>
+        <p class="text-bold">
+            Now, Alertism.js old mode argument got changed and 2 new themes are added in the new argument of mode in Alertism.js V2.0.0.
+        </p>
+        <h3 class="font-4">
+            +4 Closing Aguments
+        </h3>
+        <p class="text-bold">
+            In Alertism.js V2.0.0, 4 new Closing arguments are added which will work when the alert close and the type for these new arguments are functions.
+        </p>
+        <h3 class="font-4">
+            +1 New Icon
+        </h3>
+        <p class="text-bold">
+            In Icons, 1 more new icon get added which is completelly different from the old one's.
+        </p>
+        <h3 class="font-4">
+            Timer Argument
+        </h3>
+        <p class="text-bold">
+            A new argument for timer get added in Alertism.js V2.0.0, it will close the Alert fully automatically. The timer argument type is a Number in milliseconds.
+        </p>
+        <h3 class="font-4">
+            New Animations
+        </h3>
+        <p class="text-bold">
+            The old animations of Alertism.js got changed a bit good in Alertism.js V2.0.0, Old animations are also included in Alertism.js V2.0.0. Just make the first letter capital in the animation.
+        </p>
+        <h3 class="font-4">
+            Positions Arguments
+        </h3>
+        <p class="text-bold">
+            New argument to set position for Alerts are included in Alertism.js V2.0.0, there are 6 different positions are available to set the Alert position.
+        </p>
+        <hr>
+        <p class="text-bold">
+            And so on new things are there in also which you will learn in next section
+        </p>
+    </section>
+    <section class="wrap pack" id="use">
+        <h1 class="font-4">
+            Usage
+        </h1>
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Alertism({
+    alertHeading: "Heading for Alert",
+    alertText: "Text for Alert."
+})</div>
+        <p class="text-bold">
+            That was the basic calling of the Alertism.js V2.0.0 Alerts.
+        </p>
+        <div class="text-center">
+            <button class="btn blue text-medium shadow" onclick="Alertism({
+                alertHeading: 'Heading for Alert',
+                alertText: 'Text for Alert.'
+            })">
+                Run Code !
+            </button>
+        </div>
+        <div class="note text-bold pack" alert>
+            WARNING:- 2 Alerts can't be used at same event listeners, So if you want to use 2 Alerts at same time. You have to use the other one in the onConfirmed like argumetns of the first one.
+        </div>
+        <p class="text-bold">
+            Finally, The main object is <span class="text-red">Alertism</span> which contains all arguments in a form of array. Check out the following table and try to understand it carefully as you are only become able to use Alertism.js V2.0.0 after understanding the following table.
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">
+                        Argument
+                    </th>
+                    <th class="text-center">
+                        Argument Type
+                    </th>
+                    <th class="text-center">
+                        Work
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="text-bold text-center">
+                <tr>
+                    <td>
+                        alertHeading
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Heading For The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        alertText
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Text For The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        alertHTML
+                    </td>
+                    <td>
+                        String ( HTML Code )
+                    </td>
+                    <td>
+                        HTML Code For Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        btnText
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Text for Right Side Button
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        closeBtnText
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Enable a Button on Left Side and Text for It
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        alertFooter
+                    </td>
+                    <td>
+                        String ( HTML Code or Text )
+                    </td>
+                    <td>
+                        HTML Code or Text For Footer
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        enableIcon
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enables Icon For The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        icon
+                    </td>
+                    <td>
+                        Array
+                    </td>
+                    <td>
+                        Colour, Position and Type for Icon
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        enableInput
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable Input for Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        input
+                    </td>
+                    <td>
+                        Array
+                    </td>
+                    <td>
+                        Type ( within textarea ), Value and PlaceHolder for Input
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        enableCloseBtn
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable a Button to Close the Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        backdrop
+                    </td>
+                    <td>
+                        String ( CSS Background Code )
+                    </td>
+                    <td>
+                        Change the Backdrop of The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        background
+                    </td>
+                    <td>
+                        String ( CSS Background Code )
+                    </td>
+                    <td>
+                        Change the Background of The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        theme
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Theme for The Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        timer
+                    </td>
+                    <td>
+                        Int ( milliseconds )
+                    </td>
+                    <td>
+                        Close the Alert automatically in the given time
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        position
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Open the Alert at the given position
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        animation
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Sets animation for the Alert
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        animationIn
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Sets animation for the Alert Coming
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        animationOut
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Sets animation for the Alert Going
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onConfirmed
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the alert with confirming the following situation
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onDenied
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the alert with dening the following situation
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onCanceled
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the alert with canceling the following situation
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onAutoClose
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the alert by the timer argument
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="font-4">
+            Let's talk about all valid positions, animations, themes, icons Array and input Array for the Alerts
+        </h3>
+        <p class="text-bold">
+            1. All valid Positons are like top-left, center and bottom-right. Here's the list for them
+            <ul class="text-bold font-2">
+                <li>
+                    top-left
+                </li>
+                <li>
+                    top
+                </li>
+                <li>
+                    top-right
+                </li>
+                <li>
+                    center-left
+                </li>
+                <li>
+                    center
+                </li>
+                <li>
+                    center-right
+                </li>
+                <li>
+                    bottom-left
+                </li>
+                <li>
+                    bottom
+                </li>
+                <li>
+                    bottom-right
+                </li>
+            </ul>
+        </p>
+        <p class="text-bold">
+            2. All valid Animations are same as old, they just get a little bit more good and awesome. Here's the list
+            <ul class="text-bold font-2">
+                <li>
+                    top
+                </li>
+                <li>
+                    left
+                </li>
+                <li>
+                    bottom
+                </li>
+                <li>
+                    right
+                </li>
+                <li>
+                    center
+                </li>
+            </ul>
+        </p>
+        <p class="text-bold">
+            3. All valis themes are as follows
+            <ul class="text-bold font-2">
+                <li>
+                    light
+                </li>
+                <li>
+                    dark
+                </li>
+                <li>
+                    glass
+                </li>
+                <li>
+                    light-neumorphism
+                </li>
+                <li>
+                    dark-neumorphism
+                </li>
+            </ul>
+        </p>
+        <p class="text-bold">
+            4. The icon Array arguments are as follows
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="js">{
+    position: "center"
+    type: "tick",
+    color: "#2196f3",
+}</div>
+       <ul class="text-bold">
+           <li>
+                All valid positions are left, center, right.
+           </li>
+           <li>
+               All valid types of icons are tick, cross, info, warning, question.
+           </li>
+       </ul>
+       </p>
+       <p class="text-bold">
+           5. The input arguments are as follows
+           <div class="shiki-target shadow" data-theme="github-dark" data-language="js">{
+    type: "textarea",
+    placeHolder: "Enter Your Feedback",
+    value: "This is Nice."
+}</div>
+       </p>
+       <p class="text-bold">
+           A mixed example of most of the arguments of the Alertism
+       </p>
+       <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Alertism({
+    alertHeading: "Hello",
+    alertText: "Can I try to Hack your device please ? :) Do not worry I am just a beginner in Hacking, If I accidently done something wrong then nothing will happen just your data got sold :)",
+    btnText: "Ok, Hack It",
+    closeBtnText: "No, Please Do not",
+    enableCloseBtn: true,
+    enableIcon: true,
+    icon: {
+        type: "question"
+    },
+    alertFooter: "If something gone wrong, then BLAME YOURSELF !!",
+    onConfirmed: () => {
+        Alertism({
+            alertHeading: "Hey, Thanks !",
+            alertText: "Hacking Completed Successfully !! Your all data is now mine :)",
+            enableIcon: true,
+            theme: "light-neumorphism",
+            animation: "top"
+        })
+    },
+    onDenied: () => {
+        Alertism({
+            alertHeading: "Why ?",
+            alertText: "If you do not want your phone to be hacked than I am leaving you but do not met me again, Bye Bye ! :(",
+            enableIcon: true,
+            icon: {
+                type: "cross"
+            },
+            theme: "dark-neumorphism",
+            animation: "bottom"
+        })
+    },
+    onCanceled: () => {
+        Alertism({
+            alertHeading: "",
+            alertText: "Why ? You Canceled it !! Are not you are my friend ? Our friendship overed !! :(",
+            enableIcon: true,
+            icon: {
+                type: "warning"
+            },
+            theme: "dark",
+            animation: "left"
+        })
+    },
+    theme: "glass",
+    animation: "zoom-in"
+})</div>
+        <div class="text-center">
+            <button class="btn blue text-medium shadow" onclick='Alertism({
+                alertHeading: "Hello",
+                alertText: "Can I try to Hack your device please ? :) Do not worry I am just a beginner in Hacking, If I accidently done something wrong then nothing will happen just your data got sold :)",
+                btnText: "Ok, Hack It",
+                closeBtnText: "No, Please Do not",
+                enableCloseBtn: true,
+                enableIcon: true,
+                icon: {
+                    type: "question"
+                },
+                alertFooter: "If something gone wrong, then BLAME YOURSELF !!",
+                onConfirmed: () => {
+                    Alertism({
+                        alertHeading: "Hey, Thanks !",
+                        alertText: "Hacking Completed Successfully !! Your all data is now mine :)",
+                        enableIcon: true,
+                        theme: "light-neumorphism",
+                        animation: "top"
+                    })
+                },
+                onDenied: () => {
+                    Alertism({
+                        alertHeading: "Why ?",
+                        alertText: "If you do not want your phone to be hacked than I am leaving you but do not met me again, Bye Bye ! :(",
+                        enableIcon: true,
+                        icon: {
+                            type: "cross"
+                        },
+                        theme: "dark-neumorphism",
+                        animation: "bottom"
+                    })
+                },
+                onCanceled: () => {
+                    Alertism({
+                        alertHeading: "",
+                        alertText: "Why ? You Canceled it !! Are not you are my friend ? Our friendship overed !! :(",
+                        enableIcon: true,
+                        icon: {
+                            type: "warning"
+                        },
+                        theme: "dark",
+                        animation: "left"
+                    })
+                },
+                theme: "glass",
+                animation: "zoom-in"
+            })'>Run Code !</button>
+        </div>
+    </section>
+    <section class="pack wrap" id="toast">
+        <h1 class="font-4">
+            Toast
+        </h1>
+        <p class="text-bold">
+            Alertism.js V2.0.0 also makes Toasts means Pop-Ups, Let's have a look on it's table to understand it properly. The main object in this is <span class="text-red">Toast</span> which contains all the arguments in the form of an array
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">
+                        Arguments
+                    </th>
+                    <th class="text-center">
+                        Arguments Type
+                    </th>
+                    <th class="text-center">
+                        Work
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="text-bold text-center">
+                <tr>
+                    <td>
+                        text
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Text For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        background
+                    </td>
+                    <td>
+                        String ( CSS Background Code )
+                    </td>
+                    <td>
+                        Background For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        color
+                    </td>
+                    <td>
+                        String ( Color )
+                    </td>
+                    <td>
+                        Colour of Text For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        theme
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Theme For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        position
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Open the Toast at the given position
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        enableIcon
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable Icon For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        icon
+                    </td>
+                    <td>
+                        Array
+                    </td>
+                    <td>
+                        Colour and Type For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        showTimeLine
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable Time Bar For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        timer
+                    </td>
+                    <td>
+                        Int ( in milliseconds )
+                    </td>
+                    <td>
+                        Close Toast in the given time
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        animation
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Sets animation For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onClose
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the Toast
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="font-4">
+            All the valid positions, themes, animations and icon array are same as Alerts. Just remember the following
+        </h3>
+        <ul class="text-bold">
+            <li>
+                Position in icon Array isn't available
+            </li>
+            <li>
+                Make the First letter capital in the animations
+            </li>
+        </ul>
+        <div class="note text-bold pack">Note:- The timer for the Toasts are setted to 500 milliseconds more for the perfect animation of the time bar, If you aslo want perfect timing of the toasts going then enter the timer value to 500 milliseconds less than you want</div>
+        <p class="text-bold">
+            A mixed example of most of the arguments of the Toast
+        </p>
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Toast({
+    position: 'top-right',
+    showTimeLine: true,
+    timer: 4500,
+    enableIcon: true,
+    icon: {
+        type: 'info',
+        color: '#2196f3'
+    },
+    animation: 'Right'
+    onClose: () => {
+            Toast({
+                text: 'I am a Toast which comes on the onClose argument of the other one',
+                enableIcon: true,
+                position: 'top-left',
+                animation: 'Left',
+                showTimeLine: true,
+                timer: 4500,
+            })
+    }
+)}</div>
+        <div class="text-center">
+            <button class="btn text-medium blue shadow" onclick="Toast({
+                position: 'top-right',
+                showTimeLine: true,
+                timer: 4500,
+                enableIcon: true,
+                icon: {
+                    type: 'info',
+                    color: '#2196f3'
+                },
+                animation: 'Right',
+                onClose: () => {
+                    Toast({
+                        text: 'I am a Toast which comes on the onClose argument of the other one',
+                        enableIcon: true,
+                        position: 'top-left',
+                        animation: 'Left',
+                        showTimeLine: true,
+                        timer: 4500
+                    })
+                }
+            })">Run !</button>
+        </div>
+    </section>
+    <section class="wrap-just pack">
+        <p class="text-bold">
+            <a class="github-button" href="https://github.com/AssassinAguilar/Alertism" data-icon="octicon-star" data-size="large" aria-label="Star AssassinAguilar/Alertism on GitHub">Give it a Star</a>
+            <a class="github-button" href="https://github.com/AssassinAguilar" data-size="large" aria-label="Follow @AssassinAguilar on GitHub">Follow AssassinAguilar on GitHub</a>
+            <a class="github-button" href="https://github.com/AssassinAguilar/Alertism/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue AssassinAguilar/Alertism on GitHub">Issue</a>
+            <a class="github-button" href="https://github.com/AssassinAguilar/Alertism/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork AssassinAguilar/Alertism on GitHub">Fork Alertism.js</a>
+        </p>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/arnav-kr/Shikijs/dist/V1.2.1/shikiHighlighter.min.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/atoms19/dominity.js/dominityV2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V2.0.0/main.js"></script>
+<script>
+onload = () => {
+    Shiki.highlightAll();
+    console.log = () => {}
+    Alertism({
+        enableIcon: true,
+        alertHeading: "Welcome Guys",
+        alertText: "This is the V2.0.0 of a JS library Alertism by Assassin.",
+        btnText: "Continue",
+        alertFooter: "If you don't know what is Alertism ? <a href='https://code.sololearn.com/WxvT30Psiaqz/?ref=app'>Click Me</a>",
+        theme: "glass",
+        animation: "zoom-in"
+    })
+}
+
+onclick = (e) => {
+    if (e.target.id !== "sideNav" && e.target.id !== "hamBurger") {
+        document.querySelector(".sidenav").classList.remove("active");
+        document.querySelector(".nav-menu").classList.remove("active");
+    } else {
+        document.querySelector(".sidenav").classList.add("active");
+        document.querySelector(".nav-menu").classList.add("active");
+    }
+}
+
+function openMenu() {
+    document.querySelector(".sidenav").classList.toggle("active");
+    document.querySelector(".nav-menu").classList.toggle("active");
+}
+</script>
+</html>
