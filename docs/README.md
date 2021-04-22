@@ -430,3 +430,178 @@ Alertism({
 })
 ```
 # Toast
+Alertism.js V2.0.0 also makes Toasts means Pop-Ups, Let's have a look on it's table to understand it properly. The main object in this is **Toast** which contains all the arguments in the form of an array
+<table>
+            <thead>
+                <tr>
+                    <th>
+                        Arguments
+                    </th>
+                    <th>
+                        Arguments Type
+                    </th>
+                    <th>
+                        Work
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        text
+                    </td>
+                    <td>
+                        String ( Text )
+                    </td>
+                    <td>
+                        Text For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        background
+                    </td>
+                    <td>
+                        String ( CSS Background Code )
+                    </td>
+                    <td>
+                        Background For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        color
+                    </td>
+                    <td>
+                        String ( Color )
+                    </td>
+                    <td>
+                        Colour of Text For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        theme
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Theme For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        position
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Open the Toast at the given position
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        enableIcon
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable Icon For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        icon
+                    </td>
+                    <td>
+                        Array
+                    </td>
+                    <td>
+                        Colour and Type For Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        showTimeLine
+                    </td>
+                    <td>
+                        Boolean ( True or False )
+                    </td>
+                    <td>
+                        Enable Time Bar For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        timer
+                    </td>
+                    <td>
+                        Int ( in milliseconds )
+                    </td>
+                    <td>
+                        Close Toast in the given time
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        animation
+                    </td>
+                    <td>
+                        String
+                    </td>
+                    <td>
+                        Sets animation For The Toast
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        onClose
+                    </td>
+                    <td>
+                        Function
+                    </td>
+                    <td>
+                        A function which will work after closing the Toast
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+All the valid positions, themes, animations and icon array are same as Alerts. Just remember the following
+        <ul>
+            <li>
+                Position in icon Array isn't available
+            </li>
+            <li>
+                Make the First letter capital in the animations
+            </li>
+        </ul>
+
+**_Note:- The timer for the Toasts are setted to 500 milliseconds more for the perfect animation of the time bar, If you aslo want perfect timing of the toasts going then enter the timer value to 500 milliseconds less than you want_**
+A mixed example of most of the arguments of the Toast
+
+```javascript
+Toast({
+    position: 'top-right',
+    showTimeLine: true,
+    timer: 4500,
+    enableIcon: true,
+    icon: {
+        type: 'info',
+        color: '#2196f3'
+    },
+    animation: 'Right'
+    onClose: () => {
+            Toast({
+                text: 'I am a Toast which comes on the onClose argument of the other one',
+                enableIcon: true,
+                position: 'top-left',
+                animation: 'Left',
+                showTimeLine: true,
+                timer: 4500,
+            })
+    }
+)}
+```
