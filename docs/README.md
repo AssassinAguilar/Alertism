@@ -17,4 +17,4 @@ That was the basic calling of the Alertism.js V2.0.0 Alerts.
 The main object is **Alertism** which contains all arguments in a form of array. Check out the following table and try to understand it carefully as you are only become able to use Alertism.js V2.0.0 after understanding the following table.
 ### Table
 Arguments | Arguments Type | Work
-_________ | ______________ | ____
+--------- | -------------- | ----
