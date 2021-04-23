@@ -590,22 +590,24 @@ A mixed example of most of the arguments of the Toast
 Toast({
     position: 'top-right',
     showTimeLine: true,
-    timer: 4500,
     enableIcon: true,
     icon: {
-        type: 'info',
-        color: '#2196f3'
+    type: 'info',
+    color: '#2196f3'
     },
-    animation: 'Right'
+    animation: 'Right',
+    theme: 'glass',
+    timer: 4500,
     onClose: () => {
-            Toast({
-                text: 'I am a Toast which comes on the onClose argument of the other one',
-                enableIcon: true,
-                position: 'top-left',
-                animation: 'Left',
-                showTimeLine: true,
-                timer: 4500,
-            })
+    Toast({
+    text: 'I am a Toast which comes on the onClose argument of the other one',
+    enableIcon: true,
+    position: 'top-left',
+    animation: 'Left',
+    showTimeLine: true,
+    theme: 'dark-neumorphism',
+    timer: 4500
+    })
     }
-)}
+})
 ```
