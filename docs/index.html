@@ -68,13 +68,6 @@ body
     align-items: center;
 }
 
-.table
-{
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-}
-
 .ball
 {
     position: absolute;
@@ -97,6 +90,15 @@ body
     {
         transform: translateY(-1000%);
         opacity: 0;
+    }
+}
+
+@media(max-width:526px){
+    .table
+    {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
     }
 }
     </style>
