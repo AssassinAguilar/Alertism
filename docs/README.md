@@ -599,15 +599,15 @@ Toast({
     theme: 'glass',
     timer: 4500,
     onClose: () => {
-    Toast({
-    text: 'I am a Toast which comes on the onClose argument of the other one',
-    enableIcon: true,
-    position: 'top-left',
-    animation: 'Left',
-    showTimeLine: true,
-    theme: 'dark-neumorphism',
-    timer: 4500
-    })
+        Toast({
+            text: 'I am a Toast which comes on the onClose argument of the other one',
+            enableIcon: true,
+            position: 'top-left',
+            animation: 'Left',
+            showTimeLine: true,
+            theme: 'dark-neumorphism',
+            timer: 4500
+       })
     }
 })
 ```
