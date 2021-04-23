@@ -883,35 +883,38 @@ body
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Toast({
     position: 'top-right',
     showTimeLine: true,
-    timer: 4500,
     enableIcon: true,
     icon: {
         type: 'info',
         color: '#2196f3'
     },
-    animation: 'Right'
+    animation: 'Right',
+    theme: 'glass',
+    timer: 4500,
     onClose: () => {
-            Toast({
-                text: 'I am a Toast which comes on the onClose argument of the other one',
-                enableIcon: true,
-                position: 'top-left',
-                animation: 'Left',
-                showTimeLine: true,
-                timer: 4500,
-            })
+        Toast({
+            text: 'I am a Toast which comes on the onClose argument of the other one',
+            enableIcon: true,
+            position: 'top-left',
+            animation: 'Left',
+            showTimeLine: true,
+            theme: 'dark-neumorphism',
+            timer: 4500
+        })
     }
-)}</div>
+})</div>
         <div class="text-center">
-            <button class="btn text-bold blue shadow" onclick="Toast({
+            <button class="btn blue text-bold shadow" onclick="Toast({
                 position: 'top-right',
                 showTimeLine: true,
-                timer: 4500,
                 enableIcon: true,
                 icon: {
                     type: 'info',
                     color: '#2196f3'
                 },
                 animation: 'Right',
+                theme: 'glass',
+                timer: 4500,
                 onClose: () => {
                     Toast({
                         text: 'I am a Toast which comes on the onClose argument of the other one',
@@ -919,10 +922,11 @@ body
                         position: 'top-left',
                         animation: 'Left',
                         showTimeLine: true,
+                        theme: 'dark-neumorphism',
                         timer: 4500
                     })
                 }
-            })">Run !</button>
+            })">Run Code !</button>
         </div>
     </section>
     <section class="wrap-just pack">
