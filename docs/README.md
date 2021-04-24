@@ -360,7 +360,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
 
 ```javascript
 {
-    position: "center"
+    position: "center",
     type: "tick",
     color: "#2196f3"
 }
