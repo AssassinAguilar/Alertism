@@ -336,6 +336,7 @@ The main object is **Alertism** which contains all arguments in a form of array.
                     center
                 </li>
             </ul>
+**_Note :- The animationOut values are same as animation values just put "-out" after animation name._**
 3. All valis themes are as follows
             <ul>
                 <li>
