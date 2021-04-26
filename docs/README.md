@@ -340,23 +340,23 @@ The main object is **Alertism** which contains all arguments in a form of array.
 **_Note :- The animationOut values are same as animation values just put "-out" after animation name._**
 
 3. All valis themes are as follows
-            <ul>
-                <li>
-                    light
-                </li>
-                <li>
-                    dark
-                </li>
-                <li>
-                    glass
-                </li>
-                <li>
-                    light-neumorphism
-                </li>
-                <li>
-                    dark-neumorphism
-                </li>
-            </ul>
+<ul>
+    <li>
+        light
+    </li>
+    <li>
+        dark
+    </li>
+    <li>
+        glass
+    </li>
+    <li>
+        light-neumorphism
+    </li>
+    <li>
+        dark-neumorphism
+    </li>
+</ul>
 4. The icon Array arguments are as follows
 
 ```javascript
