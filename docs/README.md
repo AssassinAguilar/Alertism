@@ -1,4 +1,6 @@
-_Note:- All the documentations ( docs ) are of latest version of Alertism ( V2.0.0 ). If you want to use Alertism V1 then see this link_
+```
+Note:- All the documentations ( docs ) are of latest version of Alertism ( V2.0.0 ). If you want to use Alertism V1 then see this link
+```
 # Introduction
 Alertism.js is a JavaScript Library which is used to make the default Alerts of JavaScript more beautiful and good-looking than original with some few lines of code. This is the V2.0.0 of Alertism.js by Assassin. Alertism.js is also used to make some nice Toasts means Pop-Ups.
 ### Implementation
