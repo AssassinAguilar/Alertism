@@ -1,1 +1,2 @@
-*.js = true;
+* linguist-vendored;
+*.js linguist-vendored = true;
