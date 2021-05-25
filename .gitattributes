@@ -1,2 +1,2 @@
 * linguist-vendored
-dist/*.js linguist-vendored=false
+dist/*.js linguist-vendored=true
