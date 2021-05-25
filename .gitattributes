@@ -1,4 +1,2 @@
-* linguist-vendored
-dist/V1.0.0/main.js linguist-detectable=true
-dist/V2.0.0/main.js linguist-vendored=false
-docs/index.html linguist-vendored=false
+dist/** -linguist-vendored -linguist-generated
+docs/** -linguist-documentation
