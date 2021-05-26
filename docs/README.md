@@ -1,4 +1,7 @@
 # Introduction
+![Stars](https://img.shields.io/github/stars/AssassinAguilar/Alertism?style=plastic&logo=star)
+![Forks](https://img.shields.io/github/forks/AssassinAguilar/Alertism?style=plastic)
+![Latest Version](https://img.shields.io/badge/Latest--Version-V2.0.0-blue?style=plastic) <br />
 Alertism.js is a JavaScript Library which is used to make the default Alerts of JavaScript more beautiful and good-looking than original with some few lines of code. This is the V2.0.0 of Alertism.js by Assassin. Alertism.js is also used to make some nice Toasts means Pop-Ups.
 ### Implementation
 Let's talk about the easy implementation of Alertism.js V2.0.0 to your webpage. You just have to copy/paste the following CDN of Alertism.js V2.0.0 to your webpage. This CDN will import the Alertism.js V2.0.0 Library from it's repository on Assassin's GitHub profile to your webpage.
