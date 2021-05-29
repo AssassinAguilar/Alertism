@@ -1,2 +1,2 @@
 dist/** -linguist-vendored -linguist-generated
-docs/** -linguist-documentation
+docs/* -linguist-documentation
