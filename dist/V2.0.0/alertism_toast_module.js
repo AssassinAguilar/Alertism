@@ -1,4 +1,4 @@
-import * from "./constants.js"
+import * from "./constants.js";
 
 export default function Toast(_0xe270x12) {
     AlertismToastContainer['className'] = 'alert-toast-container', AlertismToast['className'] = 'alert-toast', AlertismToastGlassMorphism['className'] = 'alert-glassmorphism alert-hide', AlertismToastIcon['classList']['add']('alert-hide'), AlertismToastIcon['innerHTML'] = checkIcon['tickIcon'];
