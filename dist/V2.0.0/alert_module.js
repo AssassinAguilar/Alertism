@@ -1,11 +1,11 @@
-import * from "./constants.js";
+import { AlertismBackdrop, AlertismAlertContainer, AlertismCrossBtn, AlertismIcon, AlertismHeading, AlertismContent, AlertismInput, AlertismTextarea, AlertismBtnContainer, AlertismOkBtn, AlertismCloseBtn, AlertismGlassMorphism, AlertismFooter, AlertismTimerCountDown, checkIcon } from "./constants.js";
 
 export default function Alertism(_0xe270x12) {
     document['body']['appendChild'](AlertismBackdrop);
     AlertismCrossBtn['innerText'] = 'X', AlertismBackdrop['className'] = 'alert-backdrop', AlertismAlertContainer['className'] = 'alert-container', AlertismCrossBtn['className'] = 'alert-close alert-hide', AlertismIcon['classList']['add']('alert-hide');
     AlertismHeading['classList']['add']('alert-heading'), AlertismContent['classList']['add']('alert-content'), AlertismInput['className'] = 'alert-input alert-hide', AlertismInput['type'] = 'text';
     AlertismInput['value'] = '';
-    AlertismInput['placeholder'] = 'Enter Text', AlertismTextarea['className'] = 'alert-input', AlertismTextarea['type'] = 'text';
+    AlertismInput['placeholder'] = 'Enter Text', AlertismTextarea['className'] = 'alert-input';
     AlertismTextarea['value'] = '';
     AlertismTextarea['placeholder'] = 'Enter Text', AlertismIcon['innerHTML'] = checkIcon['tickIcon'];
     AlertismBtnContainer['classList']['add']('alert-buttons-container'), AlertismCloseBtn['classList']['add']('alert-hide'), AlertismGlassMorphism['className'] = 'alert-glassmorphism alert-hide', AlertismFooter['className'] = 'alert-footer alert-hide', AlertismTimerCountDown['className'] = 'alert-time-line alert-hide', document['body']['style']['overflow'] = 'hidden';
