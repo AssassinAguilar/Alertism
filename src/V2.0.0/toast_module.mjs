@@ -1,4 +1,4 @@
-import { AlertismToastContainer, AlertismToast, AlertismToastGlassMorphism, AlertismToastIcon, AlertismToastText, AlertismToastTimerCountDown, checkIcon } from "./constants.js";
+import { AlertismToastContainer, AlertismToast, AlertismToastGlassMorphism, AlertismToastIcon, AlertismToastText, AlertismToastTimerCountDown, checkIcon } from "./constants.mjs";
 
 export default function Toast(_0xe270x12) {
     AlertismToastContainer['className'] = 'alert-toast-container', AlertismToast['className'] = 'alert-toast', AlertismToastGlassMorphism['className'] = 'alert-glassmorphism alert-hide', AlertismToastIcon['classList']['add']('alert-hide'), AlertismToastIcon['innerHTML'] = checkIcon['tickIcon'];

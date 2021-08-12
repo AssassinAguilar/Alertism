@@ -1,4 +1,4 @@
-import { AlertismBackdrop, AlertismAlertContainer, AlertismCrossBtn, AlertismIcon, AlertismHeading, AlertismContent, AlertismInput, AlertismTextarea, AlertismBtnContainer, AlertismOkBtn, AlertismCloseBtn, AlertismGlassMorphism, AlertismFooter, AlertismTimerCountDown, checkIcon } from "./constants.js";
+import { AlertismBackdrop, AlertismAlertContainer, AlertismCrossBtn, AlertismIcon, AlertismHeading, AlertismContent, AlertismInput, AlertismTextarea, AlertismBtnContainer, AlertismOkBtn, AlertismCloseBtn, AlertismGlassMorphism, AlertismFooter, AlertismTimerCountDown, checkIcon } from "./constants.mjs";
 
 export default function Alertism(_0xe270x12) {
     document['body']['appendChild'](AlertismBackdrop);
