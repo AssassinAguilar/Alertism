@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "A Good Replacement For Default JavaScript Alerts Which Also Makes Good Pop-Ups",
   "main": "./dist/V2.0.0/main.js",
-  "homepage": "https://github.com/AssassinAguilar/Alertism/",
+  "homepage": "https://alertism.js.org/",
   "directories": {
     "doc": "docs"
   },
