@@ -1,3 +1,5 @@
+import Alertism from "../src/V2.0.0/alert_module.mjs";
+
 onload = () => {
     Shiki.highlightAll();
     console.log = () => {}
