@@ -1,3 +1,5 @@
+<p align="center"><img src="favicon.ico" alt="Logo"></p>
+
 # Introduction
 Alertism.js is a JavaScript Library which is used to make the default Alerts of JavaScript more beautiful and good-looking than original with some few lines of code. This is the V2.0.0 of Alertism.js by Assassin. Alertism.js is also used to make some nice Toasts means Pop-Ups. <br /><br />
 ![Repo Size](https://img.shields.io/github/repo-size/AssassinAguilar/Alertism?label=Repo%20Size&style=plastic)
