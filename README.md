@@ -7,7 +7,7 @@ Alertism.js is a JavaScript Library which is used to make the default Alerts of 
 ![Total Lines](https://img.shields.io/tokei/lines/github/AssassinAguilar/Alertism?label=Total%20Lines&style=for-the-badge)
 ![Downloads/week](https://img.shields.io/npm/dw/alertism?color=blue&label=Downloads&style=for-the-badge)
 ![License](https://img.shields.io/github/license/AssassinAguilar/Alertism?color=blue&label=License&style=for-the-badge)
-![NPM Version](https://img.shields.io/npm/v/alertism?style=for-the-badge)
+[![NPM Version](https://img.shields.io/npm/v/alertism?style=for-the-badge)](https://npmjs.com/package/alertism)
 ### Implementation
 Let's talk about the easy implementation of Alertism.js V2.0.0 to your webpage. You just have to copy/paste the following CDN of Alertism.js V2.0.0 to your webpage. This CDN will import the Alertism.js V2.0.0 Library from it's repository on Assassin's GitHub profile to your webpage.
 ```html
