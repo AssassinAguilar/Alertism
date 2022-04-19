@@ -7,7 +7,7 @@
   "directories": {
     "doc": "docs"
   },
-  "icon": "./docs/favicon.ico",
+  "icon": "./favicon.ico",
   "files": [
     "dist",
     "src"
