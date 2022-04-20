@@ -1,5 +1,4 @@
-*
-{
+* {
   box-sizing: border-box;
   user-select: none;
   outline: none;
@@ -8,88 +7,74 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body
-{
-    overflow: hidden;
-}
-
 *::-webkit-scrollbar,
-::-webkit-scrollbar
-{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.shiki
-{
-    padding: 10px;
-    border-radius: 5px;
-    overflow: auto;
+body {
+  overflow: hidden;
 }
 
-.nav
-{
-    padding: 0 10px;
+.shiki {
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
 }
 
-.nav .hide-till-md
-{
-    margin: 0;
+.nav {
+  padding: 0 10px;
 }
 
-.nav .hide-till-md li
-{
-    padding: 10px;
+.nav .hide-till-md {
+  margin: 0;
 }
 
-.sidenav
-{
-    width: 70%;
-    transform: translateX(-110%);
-    transition: 0.5s;
+.nav .hide-till-md li {
+  padding: 10px;
 }
 
-.sidenav.active
-{
-    transform: translateX(0);
+.sidenav {
+  width: 70%;
+  transform: translateX(-110%);
+  transition: 0.5s;
 }
 
-.first
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sidenav.active {
+  transform: translateX(0);
 }
 
-.ball
-{
-    position: absolute;
-    bottom: 0;
-    height: 10px;
-    width: 10px;
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 10px;
+  transform: translateY(-500%);
+  animation: scroll 1s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
     transform: translateY(-500%);
-    animation: scroll 1s linear infinite;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1000%);
+    opacity: 0;
+  }
 }
 
-@keyframes scroll
-{
-    0%
-    {
-        transform: translateY(-500%);
-        opacity: 1;
-    }
-
-    100%
-    {
-        transform: translateY(-1000%);
-        opacity: 0;
-    }
-}
-
-@media(max-width:526px){
-    .table
-    {
-        display: block;
-        width: 100%;
-        overflow-x: scroll;
-    }
+@media (max-width: 526px) {
+  .table {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+  }
 }
