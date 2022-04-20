@@ -1,4 +1,5 @@
 onload = () => {
+  (adsbygoogle = window.adsbygoogle || []).push({});
   Shiki.highlightAll();
   console.log = () => {};
   Alertism({
