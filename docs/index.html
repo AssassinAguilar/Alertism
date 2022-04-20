@@ -108,8 +108,7 @@
             the following CDN of Alertism.js V2.0.0 to your webpage. This CDN will import the Alertism.js V2.0.0 Library
             from it's repository on Assassin's GitHub profile to your webpage.
         </p>
-        <div class="shiki-target shadow" data-theme="github-dark" data-language="html" id="cdn">&lt;script
-            src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V2.0.0/main.js"&gt;&lt;/script&gt;</div>
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="html" id="cdn">&lt;script src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V2.0.0/main.js"&gt;&lt;/script&gt;</div>
         <div class="text-center">
             <button class="btn blue text-bold shadow" onclick="Toast({
                 text: 'Library copied Successfully !',
@@ -123,8 +122,7 @@
         <p class="text-bold">
             then
         </p>
-        <div class="shiki-target shadow" data-theme="github-dark" data-language="javascript">import { Alertism, Toast }
-            from "./node_modules/alertism/alertism.js";</div>
+        <div class="shiki-target shadow" data-theme="github-dark" data-language="javascript">import { Alertism, Toast } from "./node_modules/alertism/alertism.js";</div>
     </section>
     <section class="wrap pack" id="new">
         <h1 class="font-4">
@@ -185,9 +183,9 @@
             Usage
         </h1>
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Alertism({
-            alertHeading: "Heading for Alert",
-            alertText: "Text for Alert."
-            })</div>
+    alertHeading: "Heading for Alert",
+    alertText: "Text for Alert."
+})</div>
         <p class="text-bold">
             That was the basic calling of the Alertism.js V2.0.0 Alerts.
         </p>
@@ -559,10 +557,10 @@
         <p class="text-bold">
             4. The icon Array arguments are as follows
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">{
-            position: "center",
-            type: "tick",
-            color: "#2196f3"
-            }</div>
+    position: "center",
+    type: "tick",
+    color: "#2196f3"
+}</div>
         <ul class="text-bold">
             <li>
                 All valid positions are left, center, right.
@@ -575,63 +573,62 @@
         <p class="text-bold">
             5. The input arguments are as follows
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">{
-            type: "textarea",
-            placeHolder: "Enter Your Feedback",
-            value: "This is Nice."
-            }</div>
+    type: "textarea",
+    placeHolder: "Enter Your Feedback",
+    value: "This is Nice."
+}</div>
         </p>
         <p class="text-bold">
             A mixed example of most of the arguments of the Alertism
         </p>
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Alertism({
-            alertHeading: "Hello",
-            alertText: "Can I try to Hack your device please ? :) Do not worry I am just a beginner in Hacking, If I
-            accidently done something wrong then nothing will happen just your data got sold :)",
-            btnText: "Ok, Hack It",
-            closeBtnText: "No, Please Do not",
-            enableCloseBtn: true,
-            enableIcon: true,
-            icon: {
-            type: "question"
-            },
-            alertFooter: "If something gone wrong, then BLAME YOURSELF !!",
-            onConfirmed: () => {
-            Alertism({
+    alertHeading: "Hello",
+    alertText: "Can I try to Hack your device please ? :) Do not worry I am just a beginner in Hacking, If I accidently done something wrong then nothing will happen just your data got sold :)",
+    btnText: "Ok, Hack It",
+    closeBtnText: "No, Please Do not",
+    enableCloseBtn: true,
+    enableIcon: true,
+    icon: {
+        type: "question"
+    },
+    alertFooter: "If something gone wrong, then BLAME YOURSELF !!",
+    onConfirmed: () => {
+        Alertism({
             alertHeading: "Hey, Thanks !",
             alertText: "Hacking Completed Successfully !! Your all data is now mine :)",
             enableIcon: true,
             theme: "light-neumorphism",
             animation: "top"
-            })
-            },
-            onDenied: () => {
-            Alertism({
+        })
+    },
+    onDenied: () => {
+        Alertism({
             alertHeading: "Why ?",
             alertText: "If you do not want your phone to be hacked than I am leaving you but do not met me again, Bye
             Bye ! :(",
             enableIcon: true,
             icon: {
-            type: "cross"
+                type: "cross"
             },
             theme: "dark-neumorphism",
             animation: "bottom"
-            })
-            },
-            onCanceled: () => {
-            Alertism({
+        })
+    },
+    onCanceled: () => {
+        Alertism({
             alertHeading: "",
             alertText: "Why ? You Canceled it !! Are you not my friend ? Our friendship overed !! :(",
             enableIcon: true,
             icon: {
-            type: "warning"
+                type: "warning"
             },
             theme: "dark",
             animation: "left"
-            })
-            },
-            theme: "glass",
-            animation: "zoom-in"
-            })</div>
+        })
+    },
+    theme: "glass",
+    animation: "zoom-in"
+})</div>
         <div class="text-center">
             <button class="btn blue text-bold shadow" onclick='Alertism({
                 alertHeading: "Hello",
@@ -849,18 +846,18 @@
             A mixed example of most of the arguments of the Toast
         </p>
         <div class="shiki-target shadow" data-theme="github-dark" data-language="js">Toast({
-            position: 'top-right',
-            showTimeLine: true,
-            enableIcon: true,
-            icon: {
-            type: 'info',
-            color: '#2196f3'
-            },
-            animation: 'Right',
-            theme: 'glass',
-            timer: 4500,
-            onClose: () => {
-            Toast({
+    position: 'top-right',
+    showTimeLine: true,
+    enableIcon: true,
+    icon: {
+        type: 'info',
+        color: '#2196f3'
+    },
+    animation: 'Right',
+    theme: 'glass',
+    timer: 4500,
+    onClose: () => {
+        Toast({
             text: 'I am a Toast which comes on the onClose argument of the other one',
             enableIcon: true,
             position: 'top-left',
@@ -868,9 +865,9 @@
             showTimeLine: true,
             theme: 'dark-neumorphism',
             timer: 4500
-            })
-            }
-            })</div>
+        })
+    }
+})</div>
         <div class="text-center">
             <button class="btn blue text-bold shadow" onclick="Toast({
                 position: 'top-right',
