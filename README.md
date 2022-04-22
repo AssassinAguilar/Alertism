@@ -630,5 +630,8 @@ Toast({
     }
 })
 ```
+[![becomeapatreon](https://cdn.jsdelivr.net/gh/AssassinAguilar/FileHosting/become_a_patron_button.png)](https://https://www.patreon.com/join/jigyasutanwar)
+[![buymeacoffe](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jigyasutanwar&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/jigyasutanwar)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y6CA2KU)
 
 #### **Docs of V1.0.0 :- [https://code.sololearn.com/WxvT30Psiaqz/?ref=app](https://code.sololearn.com/WxvT30Psiaqz/?ref=app)**
