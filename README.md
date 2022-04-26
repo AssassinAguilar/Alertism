@@ -1,5 +1,4 @@
 <p align="center"><img src="Logo.jpg" alt="Logo" height="150" width="150"></p>
-<p align="center"><a href="https://www.patreon.com/join/jigyasutanwar"><img src="https://cdn.jsdelivr.net/gh/AssassinAguilar/FileHosting/become_a_patron_button.png"></a></p>
 
 # Introduction
 Alertism.js is a JavaScript Library which is used to make the default Alerts of JavaScript more beautiful and good-looking than original with some few lines of code. This is the V2.0.0 of Alertism.js by Assassin. Alertism.js is also used to make some nice Toasts means Pop-Ups. <br /><br />
@@ -453,8 +452,6 @@ Alertism({
 })
 ```
 
-<p align="center"><a href="https://www.buymeacoffee.com/jigyasutanwar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jigyasutanwar&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff"></a></p>
-
 # Toast
 Alertism.js V2.0.0 also makes Toasts means Pop-Ups, Let's have a look on it's table to understand it properly. The main object in this is **Toast** which contains all the arguments in the form of an array
 ### Arguments Table
@@ -636,6 +633,6 @@ Toast({
 })
 ```
 
-<p align="center"><a href="https://ko-fi.com/Y8Y6CA2KU"><img src="https://ko-fi.com/img/githubbutton_sm.svg"></a></p>
-
 #### **Docs of V1.0.0 :- [https://code.sololearn.com/WxvT30Psiaqz/?ref=app](https://code.sololearn.com/WxvT30Psiaqz/?ref=app)**
+
+<p align="center"><a href="https://www.buymeacoffee.com/jigyasutanwar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=jigyasutanwar&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff"></a></p>
